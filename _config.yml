@@ -1,9 +1,9 @@
 # Site settings
 title: Kai's Space
-SEOTitle: Blog | Kai's Space
+SEOTitle: Knowledge Planet | Kai's Space
 header-img: img/home-bg.jpg
 email: zhouk9864@gmail.com
-description: "这里是 @Kai Zhou 的个人博客， | "
+description: "这里是 @Kai Zhou 放知识的地方， | "
 keyword: "ASIC"
 url: "" # your host, for absolute URL
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
