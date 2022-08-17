@@ -13,9 +13,9 @@ future: true
 
 # SNS settings
 RSS: false
-weibo_username: 
-zhihu_username: 
-github_username: 
+weibo_username: 周志华爱拉扎维
+zhihu_username: 周志华爱拉扎维
+github_username: Kaigard
 twitter_username: 
 #facebook_username:  
 #linkedin_username:  firstname-lastname-idxxxx
@@ -59,7 +59,7 @@ kramdown:
       start_line: 1
 
 # Disqus settings
-disqus_username: 
+disqus_username: kaigard
 
 # Netease settings
 netease_comment: false
