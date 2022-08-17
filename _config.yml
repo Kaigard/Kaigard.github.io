@@ -74,7 +74,7 @@ ga_domain:
 
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
-sidebar-about-description: "皇马头号小黑子 <br> KX-AISC"
+sidebar-about-description: "皇马头号小黑子 <br> KX-AISC最弱代名词"
 sidebar-avatar:  # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
@@ -93,3 +93,10 @@ friends:
   [
     { title: "", href: "" }
   ]
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: http://kaigard.github.io
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
