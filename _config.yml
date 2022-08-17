@@ -74,7 +74,7 @@ ga_domain:
 
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
-sidebar-about-description: "day day up <br> 1111"
+sidebar-about-description: "皇马头号小黑子 <br> KX-AISC"
 sidebar-avatar:  # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
@@ -91,5 +91,5 @@ page-mathjax: false
 # Friends
 friends:
   [
-    { title: "乱序（Midare）", href: "http://mida.re/" }
+    { title: "", href: "" }
   ]
