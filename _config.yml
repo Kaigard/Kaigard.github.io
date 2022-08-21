@@ -74,7 +74,7 @@ ga_domain: kaigard.work
 
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
-sidebar-about-description: "皇马头号小黑子 <br> KX-AISC最弱代名词"
+sidebar-about-description: "皇马头号小黑子 <br> KX-ASIC最弱代名词 <br> NUIST头号搞笑男"
 sidebar-avatar: https://github.com/Kaigard/Kaigard.github.io/raw/master/img/me.jpg # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
