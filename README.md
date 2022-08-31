@@ -1,2 +1,2 @@
 # Kaigard.github.io
-[kai's RS-232](kaigard.work)
+[kai's RS-232](https://kaigard.work/)
