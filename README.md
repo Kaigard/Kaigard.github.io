@@ -1,5 +1,6 @@
 # Kaigard.github.io
 [kai's RS-232](https://kaigard.work/)
+该Blog旨在提供一些方便查阅的电子化资料。
 
 ## 信息配置文件:
 _config.yml
