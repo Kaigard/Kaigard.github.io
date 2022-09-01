@@ -44,3 +44,146 @@ description: "「离开世界之前 一切都是过程」"
     {% endif %}
 </ul>
 {% endif %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html {
+        font-size: 160px;
+    }
+
+    .circle {
+        position: relative;
+        /* font-size: 193px; */
+        width: 1rem;
+        height: 1rem;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+        background-color: #e7ebe3;
+    }
+
+    .circle:after {
+        position: absolute;
+        top: 0.08rem;
+        left: 0.08rem;
+        display: block;
+        content: " ";
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+        background-color: white;
+        width: 0.84rem;
+        height: 0.84rem;
+        -webkit-transition-property: all;
+        -moz-transition-property: all;
+        -o-transition-property: all;
+        transition-property: all;
+        -webkit-transition-duration: 0.2s;
+        -moz-transition-duration: 0.2s;
+        -o-transition-duration: 0.2s;
+        transition-duration: 0.2s;
+        -webkit-transition-timing-function: ease-in;
+        -moz-transition-timing-function: ease-in;
+        -o-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+    }
+
+    .circle .slice {
+        position: absolute;
+        width: 1rem;
+        height: 1rem;
+
+    }
+
+    .bar {
+        width: 1rem;
+        height: 1rem;
+        position: absolute;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+        border: 0.08rem solid #307bbb;
+        box-sizing: border-box;
+        clip: rect(0, 0.5rem, 1rem, 0rem);
+        /* 截出一个半圆 */
+        transform: rotate(calc(1deg * var(--deg)));
+    }
+
+    .fill {
+        width: 1rem;
+        height: 1rem;
+        position: absolute;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+        border: 0.08rem solid #307bbb;
+        box-sizing: border-box;
+        clip: rect(0, 1rem, 1rem, 0.5rem);
+        /* 截出一个半圆 */
+        transform: rotate(calc(1deg * var(--deg)));
+    }
+</style>
+
+<body>
+    <div v-cloak id="app">
+        <div class="circle">
+            <div
+                style="position: absolute;z-index: 999;width: 1rem;height:1rem;display: flex;flex-direction: column;justify-content: center;align-items: center;font-size: 20px;">
+                <div>
+                    {{circleDeg}}deg
+                </div>
+                <div>
+                    {{(circleDeg / 360) | toFixed2}}%
+                </div>
+            </div>
+            <div :style="circleDeg > 180 ? '' : 'clip: rect(0, 1rem, 1rem, 0.5rem);'" class="slice">
+                <div :style="{'--deg':circleDeg > 180 ? 180 : circleDeg}" class="bar"></div>
+                <div v-if="circleDeg > 180" :style="{'--deg':circleDeg - 180}" class="fill"></div>
+            </div>
+        </div>
+        <!-- <span>22%</span> -->
+
+        角度：<input v-model="deg" type="number" />
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script>
+        new Vue({
+            el: "#app",
+            data: function () {
+                return {
+                    deg: 45
+                }
+            },
+            filters:{
+                toFixed2:function(num){
+                    return (num * 100).toFixed(2) 
+                }
+            },
+            computed: {
+                circleDeg: function () {
+                    return this.deg % 360
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
+
