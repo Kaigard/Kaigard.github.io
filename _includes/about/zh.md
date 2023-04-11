@@ -6,7 +6,7 @@
  * @FilePath: /Kaigard.github.io/_includes/about/zh.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
-Hey，我是周凯，励志做一个软硬兼备但目前却啥也不会的全栈工程师，自认为是龙王山皇家气象学院电子信息工程专业(师从[庄培显](https://zhuangpeixian.github.io/Peixian-Zhuang/)老师，主攻盲图像去模糊方向)与福建大三本人工智能应用专业(主攻数字芯片设计方向)杂交出的低智商摸鱼选手。
+Hey，我是周凯，励志做一个软硬兼备但目前却啥也不会的全栈工程师。
 
 <br>
 
