@@ -5,7 +5,7 @@ header-img: img/home-bg.jpg
 email: zhouk9864@gmail.com
 description: "这里是 @Kai Zhou 放知识的地方， | "
 keyword: "ASIC"
-url: "kaigard.work" # your host, for absolute URL
+url: "http://kaigard.work" # your host, for absolute URL
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
